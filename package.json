@@ -1,0 +1,42 @@
+{
+  "name": "react-window-bigness",
+  "version": "0.0.1",
+  "description": "Performantly pass window dimensions as props! 📏",
+  "main": "dist/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc"
+  },
+  "author": "Josh Ellis <iamjoshellis@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamjoshellis/react-window-bigness.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamjoshellis/react-window-bigness/issues"
+  },
+  "homepage": "https://github.com/iamjoshellis/react-window-bigness#readme",
+  "keywords": [
+    "react",
+    "position",
+    "transforms"
+  ],
+  "devDependencies": {
+    "@types/react": "^16.8.1",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.1",
+    "tslint-clean-code": "^0.2.9",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "pubsub-js": "^1.7.0",
+    "react": ">=16.3.0"
+  }
+}
