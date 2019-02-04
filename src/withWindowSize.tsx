@@ -13,25 +13,30 @@ type Props = {
 };
 
 const withWindowSize = ComposedComponent =>
-class WindowSize extends React.Component<Props> {
-  token?: any;
+  class WindowSize extends React.Component<Props> {
+    token?: any;
 
-  handleResize = () => {
-    this.forceUpdate();
+    handleResize = () => {
+      this.forceUpdate();
+    };
+
+    componentDidMount() {
+      this.token = PubSub.subscribe(TOPIC, this.handleResize);
+    }
+
+    componentWillUnmount() {
+      PubSub.unsubscribe(this.token);
+    }
+
+    render() {
+      return (
+        <ComposedComponent
+          windowWidth={document.body.clientWidth}
+          windowHeight={document.body.clientHeight}
+          {...this.props}
+        />
+      );
+    }
   };
-
-  componentDidMount() {
-    this.token = PubSub.subscribe(TOPIC, this.handleResize);
-  }
-
-  componentWillUnmount() {
-    PubSub.unsubscribe(this.token);
-  }
-
-  render() {
-    return <ComposedComponent windowWidth={document.body.clientWidth} windowHeight={document.body.clientHeight} />
-  }
-}
-
 
 export default withWindowSize;

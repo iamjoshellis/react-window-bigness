@@ -8,9 +8,9 @@ declare module 'react-window-bigness' {
 
   interface WindowSizeProps {
     children: (windowSize: InjectedWindowSizeProps) => React.ReactNode;
-  };
+  }
 
   export class WindowSize extends React.Component<WindowSizeProps> {}
 
-  export const withWindowSize = (ComposedComponent: React.ComponentType<InjectedWindowSizeProps & any>) => React.ReactNode
+  export type withWindowSize = (ComposedComponent: React.ComponentType<any>) => React.ComponentClass<InjectedWindowSizeProps & any>
 }
