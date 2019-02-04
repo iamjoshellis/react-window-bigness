@@ -12,5 +12,5 @@ declare module 'react-window-bigness' {
 
   export class WindowSize extends React.Component<WindowSizeProps> {}
 
-  export type withWindowSize = (ComposedComponent: React.ComponentType<any>) => React.ComponentClass<InjectedWindowSizeProps & any>
+  export type withWindowSize = <P>(ComposedComponent: React.ComponentType<P>) => React.ComponentClass<InjectedWindowSizeProps & P>
 }
