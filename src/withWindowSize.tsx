@@ -31,8 +31,8 @@ const withWindowSize = ComposedComponent =>
     render() {
       return (
         <ComposedComponent
-          windowWidth={document.body.clientWidth}
-          windowHeight={document.body.clientHeight}
+          windowWidth={window.innerWidth}
+          windowHeight={window.innerHeight}
           {...this.props}
         />
       );

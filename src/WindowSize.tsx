@@ -29,8 +29,8 @@ class WindowSize extends React.Component<Props> {
 
   render() {
     return this.props.children({
-      windowWidth: document.body.clientWidth,
-      windowHeight: document.body.clientHeight,
+      windowWidth: window.innerHeight,
+      windowHeight: window.innerWidth,
     });
   }
 }
