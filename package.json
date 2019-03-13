@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Performantly pass window dimensions as props! 📏",
   "main": "dist/index.js",
-  "types": "./types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc"
