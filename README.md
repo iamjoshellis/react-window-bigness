@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/react-window-bigness.svg)](https://www.npmjs.com/package/react-window-bigness)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/374efa8a-4ed2-4e40-a95b-e4063bba1ab3/deploy-status)](https://app.netlify.com/sites/react-window-bigness/deploys)
 
-Performantly pass window dimensions as props! 📏
+Performantly pass window dimensions as props! 📐
 
 ## [Demo](https://react-window-bigness.netlify.com/)
 
