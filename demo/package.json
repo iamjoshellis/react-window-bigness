@@ -6,7 +6,7 @@
     "@storybook/react": "^5.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.8",
+    "react-scripts": "3.1.1",
     "react-window-bigness": "0.1.1",
     "styled-components": "^4.1.3"
   },
